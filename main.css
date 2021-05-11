@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+/* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"); */
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all .3s ease; 
+    font-family: 'Sen', sans-serif;
+    cursor: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-smooth: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+html::before {
+    content:"";
+    position:fixed;
+    width:40px;
+    height:40px;
+    background:#3E29FC;
+    border-radius:50%;
+    top:var(--y,0);
+    left:var(--x,0);
+    transform:translate(-50%,-50%);
+    z-index:-2;
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: aliceblue;
+ 
+}
+
+section {
+    height: 55vh;
+}
+
+h1 {
+    position: relative;
+    font-weight: 600;
+}
+
+h1.display {
+    font-size: 3.2em;
+}
+
+p {
+    line-height: 1.9em;
+}
+
+.btn {
+    border: 1.5px solid #3E29FC;
+    width: 140px;
+    height: 40px;
+    color: white;
+    z-index: -200;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+button.nav-link.active, .nav-pills .show>.nav-link {
+    color: #3E29FC!important;
+    background-color: transparent!important;
+}
+
+.game-icon {
+    width: 6vw;
+}
+
+.features {
+    margin: 12vh 0 12vh 0;
+}
+
+.tab-content {
+    padding-left: 8em;
+    padding-top: 1.6em;
+}
+
+#games {
+    padding-top: 33vh;
+}
+
+#f1 {
+    margin-bottom: 2.5em;
+}
+
+#f2 {
+    margin: 2em 0 4.5em 0;
+}
+
+#f3 {
+    margin-bottom: 3em;
+}
+
+.landing {
+    margin-top: 10%;
+}
+
+.logo {
+    width: 6em;
+    transition: transform 1s ease-in-out;
+}
+
+.logo:hover {
+    transform: rotate(60deg);
+}
+
+.mask {
+    background: 
+      radial-gradient(circle 20px 
+                      at var(--x,0) var(--y,0), 
+                      #fff 99%,#000 100%) 
+                      fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+.purple-mask {
+    background: 
+        radial-gradient(circle 20px 
+                        at var(--x,0) var(--y,0), 
+                        #fff 99%,#3E29FC 100%) 
+                        fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.mb-show {
+    display: none;
+}
+
+p.mrg {
+    margin: 1em 0 2em 0;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 100px) 
+and (max-device-width : 515px) {
+    html::before{
+        background: transparent;
+        display: none;
+    }
+
+    section {
+        margin: 0vh 0 22vh 0;
+        height: 100%;
+    }
+
+    .logo {
+        width: 2.4em;
+    }
+
+    .game-icon {
+        width: 20vw;
+    }
+
+    h1.display {
+        font-size: 3em;
+    }
+
+    .landing {
+        margin-top: 15vh;
+    }
+
+    .tab-content {
+        padding-left: 0em;
+        padding-top: 0em;
+        margin-top: 20em;
+    }
+
+
+    .mb-show {
+        display: block;
+    }
+
+    #v-pills-tab {
+        display: none;
+    }
+}

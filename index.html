@@ -6,11 +6,196 @@
     <title>What's That Sound?</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
-    
+    <nav class="navbar navbar-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="logo.png" alt="logo">
+          </a>
+          <ul class="nav justify-content-end mask">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#intro">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#games">GAMES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#demo">VIDEO</a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+    <section class="landing">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <h1 class="display purple-mask">Timbre Exploration <br/>Mobile Game</h1>
+                    <p class="lead mask mrg">
+                        Engage young children's listening skills and have fun!
+                    </p>
+                    <button class="btn mask"><a href="#intro">LEARN MORE</a></button>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid" src="mock1.png"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="intro">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <h1 class="purple-mask">What's That Sound?</h1>
+                    <p class="lead mask mrg">
+                        Timbre — also known as the “colors” of the sound — is the quality that makes a sound 
+                        unique. What’s That Sound focuses on timbre exploration via different types of 
+                        instruments to help children develop the sensitive listening skills that are critical 
+                        to learning language, music, and more! 
+                    </p>
+                </div>
+            </div>
+            <div class="features">
+                <div class="row justify-content-center">
+                    <div class="col-md-3 col-sm text-center">
+                        <img src="chars.png" class="img-fluid" id="f1"/>
+                        <p class="mask">LEARN WITH<br/>PLAYFUL CHARACTERS</p>
+                    </div>
+                    <div class="col-md-3 col-sm text-center">
+                        <img src="mock2.png" class="img-fluid" id="f2"/>
+                        <p class="mask">PARENTAL ACCESS<br/>FEATURE</p>
+                    </div>
+                    <div class="col-md-3 col-sm text-center">
+                        <img src="hi5.png" class="img-fluid" id="f3"/>
+                        <p class="mask">FAMILY BONDING<br/>MUSICAL ACTIVITIES</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="games">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <!-- <h1 class="purple-mask">Games</h1> -->
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <button class="nav-link active" id="v-pills-listening-tab" data-bs-toggle="pill" data-bs-target="#v-pills-listening" type="button" role="tab" aria-controls="v-pills-listening" aria-selected="true">
+                                <img class="game-icon" src="listen.png"/><br/>
+                                LISTENING
+                          </button>
+                          <button class="nav-link" id="v-pills-jamming-tab" data-bs-toggle="pill" data-bs-target="#v-pills-jamming" type="button" role="tab" aria-controls="v-pills-jamming" aria-selected="false">
+                                <img class="game-icon" src="jam.png"/> <br/>
+                                JAMMING
+                          </button>
+                        </div>
+                        <div class="tab-content" id="v-pills-tabContent">
+                          <div class="tab-pane fade show active" id="v-pills-listening" role="tabpanel" aria-labelledby="v-pills-listening-tab">
+                            <div class="row justify-content-center">
+                                <h2 class="purple-mask">Listening Game</h2>
+                                <p class="lead mask mrg">
+                                    Instrument exploration teaches children auditory discrimination that not only helps them hear the minute differences
+                                    between letter sounds or phonemes, but also supports literacy and language development.
+                                </p>
+                                <div class="col-md-4 text-center">
+                                    <img class="img-fluid" src="association.png"/>
+                                    <p class="mask">MODULE 1<br/><span class="lead purple-mask">Association</span></p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <img class="img-fluid" src="identification.png"/>
+                                    <p class="mask">MODULE 2<br/><span class="lead purple-mask">Identification</span></p>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <img class="img-fluid" src="detection.png"/>
+                                    <p class="mask">MODULE 3<br/><span class="lead purple-mask">Detection</span></p>
+                                </div>
+                                <div class="mb-show">
+                                    <h2 class="purple-mask">Jam With Friends</h2>
+                                    <div class="row justify-content-center">
+                                        <p class="mask lead mrg">
+                                            Mix and match different instruments to create a unique music jamming exprience to maximize children's creativity and critical thinking skills!
+                                        </p>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-4 text-center">
+                                            <img class="img-fluid" src="nr.png"/>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <img class="img-fluid" src="classical.png"/>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <img class="img-fluid" src="jazz.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="v-pills-jamming" role="tabpanel" aria-labelledby="v-pills-jamming-tab">
+                            <h2 class="purple-mask">Jam With Friends</h2>
+                            <div class="row justify-content-center">
+                                <div class="col">
+                                    <p class="mask lead mrg">
+                                        Mix and match different instruments to create a unique music jamming exprience to maximize children's creativity and critical thinking skills!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-md-4 text-center">
+                                    <img class="img-fluid" src="nr.png"/>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <img class="img-fluid" src="classical.png"/>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <img class="img-fluid" src="jazz.png"/>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <h1 class="purple-mask"></h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-2">
+                    <!-- <img class="img-fluid" src="mc-graphic.png"/> -->
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container" id="demo">
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <h1 class="purple-mask">Sneak Peek</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Bootsrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!-- Custom JS-->
+    <script type="text/javascript" src="main.js"></script>
+
 </body>
 </html>
