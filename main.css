@@ -40,7 +40,7 @@ body {
 }
 
 section {
-    height: 55vh;
+    height: 80vh;
 }
 
 h1 {
@@ -103,7 +103,18 @@ button.nav-link.active, .nav-pills .show>.nav-link {
 }
 
 .landing {
-    margin-top: 10%;
+    margin-top: 22%;
+}
+
+.landing img {
+    top: -20em;
+    position: relative;
+    left: 32em;
+    height: 50vh;
+}
+
+.landing button {
+    margin: 0 auto;
 }
 
 .logo {
